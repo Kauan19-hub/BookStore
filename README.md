@@ -156,6 +156,11 @@ python manage.py runserver
 - `Django Rest Framework`;
 - `Express`.
 
+---
+
+`py manage.py runserver`</br>
+`ng serve`
+
 ###
 
 **Tools for Tests**: [Insomnia](https://insomnia.rest/download) and/or [Postman](https://www.postman.com/downloads/)
