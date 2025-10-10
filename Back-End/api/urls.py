@@ -1,8 +1,11 @@
 from django.urls import path
 from .views import *
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
 from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r"imagens", ImagemViewSet, basename="imagens")
+
 
 urlpatterns = [
     path('autores/', AutoresView.as_view(), name='autores-list'), 
@@ -21,6 +24,8 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     
 ] 
+
+urlpatterns += router.urls
 
 
 
