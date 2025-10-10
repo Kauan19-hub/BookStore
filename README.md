@@ -207,8 +207,44 @@ Issues and contributions are welcome! Feel free to suggest improvements or contr
 
 ###
 
+| ITEM                  | RESPONSIBLE FOR DEPENDENCIES              |
+|-----------------------|-------------------------------------------|
+| `env` (Python)        | Python Packages                           |
+| `node_modules` (Node) | JS/Angular Packages                       |
+| `requirements.txt`    | List of what to install on `env`          |
+| `package.json`        | List of what to install on `node_modules` |
+
+###
+
 The flow of the application follows the model below: the user interacts through the Front-End, which consumes the data via API (Back-End),
 responsible for processing and querying the database. The response is sent in JSON, displayed again in the interface.
+
+---
+
+OBS: Depending on your version `Node.js`, `TypeScript`, `Django`, `TailwindCSS`, `Angular.JS` e `npm`, the bookstore may not be open. Below will be noted the 
+versions of all extensions and languages used to function correctly:
+
+###
+
+✅- Back-End
+
+###
+
+**Django**: 5.2.5;<br>
+**Openpyxl**: 3.1.5;<br>
+**Pandas**: 2.3.2;<br>
+**PyJWT**: 2.10.1;<br>
+**Asgiref**: 3.9.1.
+
+###
+
+✅- Front-End
+
+###
+**npm**: 11.6.1;<br>
+**Angular.JS**: 20.3.1;<br>
+**TypeScript**: 2.0.4;<br>
+**TailwindCSS**: 4.1.13.
 
 ---
 
