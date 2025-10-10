@@ -207,6 +207,15 @@ Issues and contributions are welcome! Feel free to suggest improvements or contr
 
 ###
 
+| ITEM                  | RESPONSIBLE FOR DEPENDENCIES              |
+|-----------------------|-------------------------------------------|
+| `env` (Python)        | Python Packages                           |
+| `node_modules` (Node) | JS/Angular Packages                       |
+| `requirements.txt`    | List of what to install on `env`          |
+| `package.json`        | List of what to install on `node_modules` |
+
+###
+
 The flow of the application follows the model below: the user interacts through the Front-End, which consumes the data via API (Back-End),
 responsible for processing and querying the database. The response is sent in JSON, displayed again in the interface.
 
