@@ -280,6 +280,8 @@ versions of all extensions and languages used to function correctly:
   <img src="https://skillicons.dev/icons?i=django" height="30" alt="django logo" title="Django" />
   <img width="2" />
   <img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo" title="MySQL | SQL"  />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=sqlite" height="30" alt="sqlite logo" title="SQLite" />
 </div>
 
 ###
