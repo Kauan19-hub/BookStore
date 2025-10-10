@@ -152,7 +152,7 @@ python manage.py runserver
 
 ###
 
-- `pandas`, `openpyxl`;
+- `pandas`, `openpyxl`, `Pillow`;
 - `Django Rest Framework`;
 - `Express`.
 
