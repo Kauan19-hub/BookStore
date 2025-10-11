@@ -36,8 +36,8 @@ fetch("http://localhost:3000/api/livros")
 ✅ Folder structure in Insonmia or Postman for API testing;<br>
 ✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;<br>
 ✅ File and directory organization;<br>
-✅ Using Front-End and Back-End<br>
-✅ Examples with Node.JS, Angular.JS and Express<br>
+✅ Using Front-End and Back-End;<br>
+✅ Examples with Node.JS, Angular.JS and Express;<br>
 ✅ Examples of how to use Django and JSON for API integration;<br>
 ✅ Documentation explaining the project.<br>
 
