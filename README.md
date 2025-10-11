@@ -241,10 +241,15 @@ versions of all extensions and languages used to function correctly:
 ✅- Front-End
 
 ###
+
 **npm**: 11.6.1;<br>
 **Angular.JS**: 20.3.1;<br>
 **TypeScript**: 2.0.4;<br>
 **TailwindCSS**: 4.1.13.
+
+###
+
+> More in requirements.txt
 
 ---
 
