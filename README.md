@@ -36,8 +36,8 @@ fetch("http://localhost:3000/api/livros")
 ✅ Folder structure in Insonmia or Postman for API testing;<br>
 ✅ Automation scripts for generating spreadsheet readings using pandas and openpyxl;<br>
 ✅ File and directory organization;<br>
-✅ Using Front-End and Back-End<br>
-✅ Examples with Node.JS, Angular.JS and Express<br>
+✅ Using Front-End and Back-End;<br>
+✅ Examples with Node.JS, Angular.JS and Express;<br>
 ✅ Examples of how to use Django and JSON for API integration;<br>
 ✅ Documentation explaining the project.<br>
 
@@ -241,10 +241,15 @@ versions of all extensions and languages used to function correctly:
 ✅- Front-End
 
 ###
+
 **npm**: 11.6.1;<br>
 **Angular.JS**: 20.3.1;<br>
 **TypeScript**: 2.0.4;<br>
 **TailwindCSS**: 4.1.13.
+
+###
+
+> More in requirements.txt
 
 ---
 
