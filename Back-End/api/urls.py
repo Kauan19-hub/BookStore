@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r"imagens", ImagemViewSet, basename="imagens")
+router.register(r"livros", LivrosView, basename="livros")
 
 
 urlpatterns = [
@@ -25,7 +26,8 @@ urlpatterns = [
     
 ] 
 
-urlpatterns += router.urls
+# urlpatterns += router.urls
+
 
 
 
