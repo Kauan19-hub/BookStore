@@ -7,8 +7,7 @@ import { enviroment } from '../../../environments/environments.prod';
   standalone: true,
   selector: 'app-imagens',
   imports: [CommonModule],
-  templateUrl: './image.component.html',
-  styleUrl: './image.component.css'
+  templateUrl: './image.components.html',
 })
 export class ImagensComponent {
   private svc = inject(ImagemService);

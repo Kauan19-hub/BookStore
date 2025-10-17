@@ -28,7 +28,7 @@ class LivroSerializer(serializers.ModelSerializer):
             "isbn", 
             "descricao", 
             "idioma", 
-            "ano_publicacao", 
+            "ano", 
             "paginas", 
             "preco", 
             "estoque", 
@@ -37,7 +37,7 @@ class LivroSerializer(serializers.ModelSerializer):
             "dimensoes", 
             "peso", 
             "capa",
-            "capa_url"   
+            "capa_url",  
         ]
 
     def get_capa_url(self, obj):
@@ -69,7 +69,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         )
     
-class ImageSerializer(serializers.ModelSerializer):
+class ImagemSerializer(serializers.ModelSerializer):
     url = serializers.SerializerMethodField()
     class Meta:
 

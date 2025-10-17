@@ -30,7 +30,7 @@ import { AuthService } from '../../services/auth.services';
         </ul>
       }
       <nav style="margin-top:1rem">
-        <a routerLink="/home">Voltar ao início</a>
+        <a class="text-blue-600 hover:underline" routerLink="/home">Voltar ao início</a>
       </nav>
     </section>
   `

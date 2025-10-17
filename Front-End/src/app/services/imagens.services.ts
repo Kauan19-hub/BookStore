@@ -14,7 +14,7 @@ export type Imagem = {
 @Injectable({providedIn: 'root'})
 export class ImagemService {
     private http = inject(HttpClient)
-    private base = `${environment.apiBase}api/imagens/`
+    private base = `${environment.apiBase}api/imagens`
 
     private headers(): HttpHeaders {
         const token = localStorage.getItem('access')

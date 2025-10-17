@@ -5,6 +5,7 @@ import { BooksComponent } from './pages/books/books.component';
 import { PublisherComponent } from './pages/publisher/publisher.component';
 import { LoginComponent } from './pages/login/login.component';
 import { authGuard } from './auth.guard';
+import { ImagensComponent } from './pages/image/image.components';
 
 export const routes: Routes = [
     {path: '', component: LoginComponent},
@@ -13,6 +14,6 @@ export const routes: Routes = [
     {path: 'autores', component: AutoresPage, canActivate: [authGuard]},
     {path: 'editoras', component: PublisherComponent, canActivate: [authGuard]},
     {path: 'livros', component: BooksComponent, canActivate: [authGuard]},
-    {path: 'imagens', component: BooksComponent}
+    {path: 'imagens', component: ImagensComponent}
     
 ];

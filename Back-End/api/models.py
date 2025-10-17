@@ -45,7 +45,7 @@ class Livro(models.Model):
     disponivel = models.BooleanField(default=True)	                    #BooleanField	Se está ativo no catálogo
     dimensoes =	models.CharField(max_length=255)                        #CharField	Tamanho físico do livro
     peso =	models.DecimalField(max_digits=10, decimal_places=2)        #DecimalField	Peso em gramas, se for físico
-    capa = models.ImageField(upload_to=path_capa, blank=True, null=True)
+    capa = models.ImageField(upload_to=path_capa, blank=True, null=True)     #ImageField    Carregamento das capas dos livros
 
     def __str__(self):
         return self.titulo
