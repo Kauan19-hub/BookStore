@@ -13,7 +13,7 @@ export class EditorasService {
   
 
   listar():Observable<Editora[]> {
-    const url = `${this.base}api/editoras/`;
+    const url = `${this.base.replace(/\/+$/, '')}/api/editoras/`;
     return this.http.get<Editora[]>(url);
     
   }

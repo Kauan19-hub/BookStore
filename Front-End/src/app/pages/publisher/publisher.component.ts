@@ -8,11 +8,12 @@ import { AuthService } from '../../services/auth.services';
   selector: 'app-publisher.component',
   imports: [RouterLink],
   templateUrl: './publisher.component.html',
-  styleUrl: './publisher.component.css'
+  styleUrls: ['./publisher.component.css']
 })
 export class PublisherComponent {
   private svc = inject(EditorasService);
   private auth = inject(AuthService);
+
   editoras = signal<Editora[]>([]);
   carregando = signal(true);
   erro = signal<string | null>(null);
