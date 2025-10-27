@@ -64,7 +64,7 @@ source env/bin/activate ## MacOS/Linux
 
 ---
 
-**<h2>🥇 Organization:</h2>**
+**<h2>Organization:</h2>**
 
 ###
 
@@ -76,7 +76,7 @@ source env/bin/activate ## MacOS/Linux
 
 ###
 
-**<h2>💡 Quick tip :</h2>**
+**<h2>Quick tip :</h2>**
 
 ###
 ```python
@@ -137,7 +137,7 @@ python manage.py runserver
 
 ###
 
-**<h2>📌 Versions</h2>**
+**<h2>Versions</h2>**
 
 ###
 
@@ -147,7 +147,7 @@ python manage.py runserver
 
 ###
 
-**<h2>📌 Main Dependencies:</h2>**
+**<h2>Main Dependencies:</h2>**
 
 ###
 
@@ -168,7 +168,7 @@ python manage.py runserver
 
 ---
 
-**<h2>🤝 Contributions**
+**<h2>Contributions**
 
 ###
 
