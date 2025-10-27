@@ -1,8 +1,7 @@
-**<h2>🖥️ Area Project - Library</h2>**
+**<h2>Library SENAI</h2>**
 
 ###
-
-✨ Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
+Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
 
 ###
 
