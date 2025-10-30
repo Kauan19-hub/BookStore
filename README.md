@@ -1,8 +1,7 @@
-**<h2>🖥️ Area Project - Library</h2>**
+**<h2>Library SENAI</h2>**
 
 ###
-
-✨ Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
+Feat: Initial setup with `env` virtual environment, automatic spreadsheets and organized projects! 
 
 ###
 
@@ -65,7 +64,7 @@ source env/bin/activate ## MacOS/Linux
 
 ---
 
-**<h2>🥇 Organization:</h2>**
+**<h2>Organization:</h2>**
 
 ###
 
@@ -77,7 +76,7 @@ source env/bin/activate ## MacOS/Linux
 
 ###
 
-**<h2>💡 Quick tip :</h2>**
+**<h2>Quick tip :</h2>**
 
 ###
 ```python
@@ -138,7 +137,7 @@ python manage.py runserver
 
 ###
 
-**<h2>📌 Versions</h2>**
+**<h2>Versions</h2>**
 
 ###
 
@@ -148,7 +147,7 @@ python manage.py runserver
 
 ###
 
-**<h2>📌 Main Dependencies:</h2>**
+**<h2>Main Dependencies:</h2>**
 
 ###
 
@@ -169,7 +168,7 @@ python manage.py runserver
 
 ---
 
-**<h2>🤝 Contributions**
+**<h2>Contributions**
 
 ###
 
@@ -269,8 +268,6 @@ versions of all extensions and languages used to function correctly:
   <img src="https://skillicons.dev/icons?i=html" height="30" alt="html5 logo" title="HTML5"  />
   <img width="2" />
   <img src="https://skillicons.dev/icons?i=css" height="30" alt="css logo" title="CSS3" />
-  <img width="2" />
-  <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo" title="React" />
 </div>
 
 ###
