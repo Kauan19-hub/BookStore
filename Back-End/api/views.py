@@ -7,11 +7,11 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework_simplejwt.tokens import RefreshToken
-from .filters import AutorFilter
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.parsers import MultiPartParser, FormParser
+from .filters import AutorFilter, EditoraFilter, LivroFilter
 
 @api_view(['GET', 'POST'])
 def listar_autores(request):
@@ -30,11 +30,13 @@ def listar_autores(request):
 class AutoresView(ListCreateAPIView):
     queryset = Autor.objects.all()
     serializer_class = AutorSerializer
-    # permission_classes =[IsAuthenticated]
-    filter_backends = [DjangoFilterBackend, SearchFilter]
-    # filterset_fields = ['id']               # Permite o filtro exato
-    # search_fields = ['nome', 'sobrenome']   # busca parcial: ?search=Jorge
-    filterset_class = AutorFilter           # Caso queira filtro duplo "Nome" e "Nacionalidade"
+    permission_classes =[IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, SearchFilter,OrderingFilter]
+    ilterset_fields = ['id']               
+    search_fields = ['autor', 's_autor', 'nasc']
+    ordering_fields = ['id', 'autor']
+    ordering = ['autor']
+    filterset_class = AutorFilter         
     
 class AutoresDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Autor.objects.all()
@@ -46,8 +48,10 @@ class EditorasView(ListCreateAPIView):
     serializer_class = EditoraSerializer
     # permission_classes =[IsAuthenticated]
     filter_backends = [DjangoFilterBackend, SearchFilter]
-    filterset_fields = ['id', 'nome']
-    search_fields = ['nome']  
+    filterset_fields = ['id', 'editora']
+    search_fields = ['editora']
+    ordering_fields = ['id', 'editora']
+    ordering   = ['editora']
 
 class EditorasDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Editora.objects.all()
@@ -58,7 +62,8 @@ class LivrosView(ListCreateAPIView):
     queryset = Livro.objects.all().select_related('autor')
     serializer_class = LivroSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-    search_fields = ['titulo', 'autor__nome', 'autor__sobrenome']
+    filterset_fields = ['id', 'titulo']
+    search_fields = ['titulo', 'subtitulo',  'autor']
     ordering_fields = ['id', 'titulo']
     ordering = ['titulo']
 
